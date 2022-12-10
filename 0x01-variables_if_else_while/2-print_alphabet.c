@@ -1,14 +1,17 @@
 #include <stdio.h>
 
+/**
+ * main -Entry point
+ *
+ * Return: Always 0 (Success)
+ */
+
 int main(void)
 {
-	char zh = 'a';
-	while (zh <= 'z')
-	{
-		putchar(zh);
-		++zh;
-	}
-	putchar('\n');
+	int ch;
 
+	for (ch = 'a'; ch <= 'z'; ch++)
+		putchar(ch);
+	putchar('\n');
 	return (0);
 }
