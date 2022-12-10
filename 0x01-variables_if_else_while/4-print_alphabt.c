@@ -1,17 +1,19 @@
 #include <stdio.h>
-#include <stdlib.h>
 
-int main()
+/**
+ * main - Entry point
+ *
+ * Return: Always 0 (Success)
+ */
+int main(void)
 {
-	char lower = 'a';
-	while (lower <= 'z'){
-		if (lower == 'e' || lower == 'q')		
-			++lower;
-			putchar(lower);
-			++lower;
+	char c;
+
+	for (c = 'a'; c <= 'z'; c++)
+	{
+		if (c != 'e' && c != 'q')
+		putchar(c);
 	}
-		putchar('\n');
-
-		return (0);
+	putchar('\n');
+	return (0);
 }
-
