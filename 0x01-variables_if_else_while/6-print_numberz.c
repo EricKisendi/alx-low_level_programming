@@ -1,15 +1,16 @@
 #include <stdio.h>
-#include <stdlib.h>
 
-int main()
+/**
+ * main -Entry point
+ *
+ * Return: ALways 0 (success)
+ */
+int main(void)
 {
-	int a = 0;
+	int num;
 
-	while (a <= 9){
-		putchar(a + '0');
-		++a;
-	}
+	for (num = 0; num < 10; num++)
+		putchar(num + '0');
 	putchar('\n');
-
 	return (0);
 }

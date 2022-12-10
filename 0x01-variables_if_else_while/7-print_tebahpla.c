@@ -1,15 +1,16 @@
 #include <stdio.h>
-#include <stdlib.h>
 
-int main()
+/**
+ * main - Entry point
+ *
+ * Return: Always 0 (Success)
+ */
+int main(void)
 {
-	char lower = 'z';
+	char c;
 
-	while (lower <= 'a'){
-		putchar(lower);
-		--lower;
-	}
+	for (c = 'z'; c >= 'a'; c--)
+		putchar(c);
 	putchar('\n');
-
 	return (0);
 }
