@@ -1,25 +1,17 @@
 #include <stdio.h>
 /**
- * Looping_alphabet - creating a loop of upperand lower alphabet
+ * main -Entry point
  *
- * Return: Always success
+ * Return: Always 0 (Success)
  */
-int main()
+int main(void)
 {
-	char lower = 'a';
-	char upper = 'A';
+	int ch;
 
-	while (lower <= 'z')
-	{
-		putchar(lower);
-		++lower;
-	}
-	while (upper <= 'Z')
-	{
-		putchar(upper);
-		++upper;
-	}
+	for (ch = 'a'; ch <= 'z'; ch++)
+		putchar(ch);
+	for (ch = 'A'; ch <= 'Z'; ch++)
+		putchar(ch);
 	putchar('\n');
-	
 	return (0);
 }
